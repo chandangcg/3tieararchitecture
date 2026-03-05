@@ -22,93 +22,61 @@ Load Balancer distributes traffic between two web servers.
 
 Client → Load Balancer → Web1 / Web2
 
-## Project Structure
-
-project/
-│
-├── terraform/
-│   └── main.tf
-│    └── outputs.tf
-│    └──variables.tf
-|   
-│
-├── ansible/
-│   ├── ansible.cfg
-│   ├── ping.yml
-│   ├── inventory.ini
-│   ├── site.yml
-│   └── roles/
-│       └── ping_role
-│       │   └── tasks
-│       │      └── main.yml
-│       └── lb 
-│       └── tasks
-│       │      └── main.yml                   
-│       └── templates
-│       │       └── index.html.j2
-│       │ 
-│       └── web  
-│            └── tasks
-│               └── main.yml
-│
-└── README.md
 
 
 # Git Configuration with SSH 
 
-# 1. Check Git installation
+## 1. Check Git installation
 
 git --version
 
-# 2. Configure Git username and email
+## 2. Configure Git username and email
 
 git config --global user.name " User name"
 
-# 3. Generate SSH key
+## 3. Generate SSH key
 
 ssh-keygen -C "[Emailid]
 
-# 4. Start SSH agent
+## 4. Start SSH agent
 
 eval "$(ssh-agent -s)"
 
-# 5. Add SSH key to agent
+## 5. Add SSH key to agent
 
 ssh-add ~/.ssh/id_ed25519
 
-# 6. Display public SSH key (copy this and add to GitHub)
+## 6. Display public SSH key (copy this and add to GitHub)
 
 cat ~/.ssh/id_ed25519.pub
 
-# ---- Add this key to GitHub ----
+## Go to GitHub → Settings → SSH and GPG Keys → New SSH Key → Paste key
 
-# Go to GitHub → Settings → SSH and GPG Keys → New SSH Key → Paste key
-
-# 7. Test SSH connection
+## 7. Test SSH connection
 
 ssh -T 
 
-# 8. Initialize Git repository
+## 8. Initialize Git repository
 
 git init
 
-# 9. Add README file
+## 9. Add README file
 
 git add README.md
 
-# 10. Commit the file
+## 10. Commit the file
 
 git commit -m "Initial commit"
 
-# 11. Set main branch
+## 11. Set main branch
 
 git branch -M main
 
-# 12. Connect GitHub repository
+## 12. Connect GitHub repository
 
 git remote add origin [Emailid]
 
-# 13. Push project to GitHub
+ 13. Push project to GitHub
 
 git push -u origin main
 
