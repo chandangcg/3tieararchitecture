@@ -66,7 +66,7 @@ git remote add origin [Emailid]
 13. Push project to GitHub
 git push -u origin main
 
-##Terraform configaration
+## Terraform configaration
 
 1. Install Terraform
 brew tap hashicorp/tap
@@ -97,7 +97,7 @@ terraform state list
 
 ![/vbinstance.png]
 
-##Ansible configaration
+## Ansible configaration
 
 1. Install Ansible
 brew install ansible
