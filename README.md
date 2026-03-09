@@ -9,6 +9,8 @@ The setup includes:
 - 2 Web Servers
 - Ubuntu 22.04 Virtual Machines
 - Nginx Web Server
+.
+
 
 ## Tools & Technologies
 - Terraform
@@ -16,13 +18,14 @@ The setup includes:
 - VirtualBox
 - Ubuntu 22.04
 - Nginx
+- Prometheus
+- Grafana
 
 ## Architecture
 Load Balancer distributes traffic between two web servers.
 
 Client → Load Balancer → Web1 / Web2
-
-
+prometheus -> monitoring service
 
 # Git Configuration with SSH 
 
@@ -127,6 +130,62 @@ touch playbook.yml
 
 9. Run Ansible playbook
 ansible-playbook -i inventory.ini playbook.yml
+
+10. Instaling Prometheus and Grafana
+ansible-playbook -i inventory.ini monitoring.yml -K
+
+## VirtualBox Instance
+![VirtualBox Instance](pic/vbinstance.png)
+
+## VM Instances Dashboard
+![VM Dashboard](pic/vminstancedashb.png)
+
+## Ubuntu Installation
+![Ubuntu Install](pic/ubuntuinstall.png)
+
+## SSH Error
+![SSH Error](pic/ssherror.png)
+
+## Ansible Installing Grafana
+![Ansible Install Grafana](pic/ansibleinstallgrafana.png)
+
+## Ansible Run
+![Ansible Run](pic/ansiblerun.png)
+
+## Deploy Custom HTML
+![Deploy HTML](pic/deploycustomhtml.png)
+
+## Grafana Dashboard
+![Grafana Dashboard](pic/grafanadashboard.png)
+
+## Grafana Connected with Prometheus
+![Grafana Prometheus](pic/grafanadashwithcon.png)
+
+## Install Nginx
+![Install Nginx](pic/installnginx.png)
+
+## Load Balancer Page
+![Load Balancer Page](pic/loadbalancerpage.png)
+
+## Load Balancer IP
+![Load Balancer IP](pic/loadbalancerip.png)
+
+## Node1 IP
+![Node1 IP](pic/node1ip.png)
+
+## Node1 Page
+![Node1 Page](pic/node1page.png)
+
+## Node2 IP
+![Node2 IP](pic/node2ip.png)
+
+## Node2 Page
+![Node2 Page](pic/node2page.png)
+
+## Prometheus Dashboard
+![Prometheus Dashboard](pic/prometheusdash.png)
+
+
 
 
 
